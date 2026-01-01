@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MCQ Quiz</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+        padding: 20px;
+    }
+
+    .quiz-container {
+        max-width: 800px;
+        margin: auto;
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .question {
+        margin-bottom: 30px;
+    }
+
+    .question p {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .options button {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        margin: 6px 0;
+        font-size: 15px;
+        border-radius: 6px;
+        border: 2px solid #ccc;
+        background: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .options button.correct {
+        background: #c8f7c5;
+        border-color: green;
+        color: green;
+    }
+
+    .options button.wrong {
+        background: #f7c5c5;
+        border-color: red;
+        color: red;
+    }
+
+    .options button:disabled {
+        cursor: not-allowed;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="quiz-container">
+<h1>MCQ Quiz</h1>
+
+<!-- Q1 -->
+<div class="question">
+<p>1. The period of the First World War was</p>
+<div class="options">
+<button data-correct="false" onclick="checkAnswer(this)">A) 1910 - 1915</button>
+<button data-correct="true" onclick="checkAnswer(this)">B) 1914 - 1918</button>
+<button data-correct="false" onclick="checkAnswer(this)">C) 1915 - 1920</button>
+<button data-correct="false" onclick="checkAnswer(this)">D) 1913 – 1917</button>
+</div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+<p>2. The name of the currency of the European Union is</p>
+<div class="options">
+<button data-correct="false" onclick="checkAnswer(this)">A) Rupee</button>
+<button data-correct="false" onclick="checkAnswer(this)">B) Ruble</button>
+<button data-correct="true" onclick="checkAnswer(this)">C) Euro</button>
+<button data-correct="false" onclick="checkAnswer(this)">D) Dollar</button>
+</div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+<p>3. The country included in South Asia is</p>
+<div class="options">
+<button data-correct="true" onclick="checkAnswer(this)">A) India</button>
+<button data-correct="false" onclick="checkAnswer(this)">B) Japan</button>
+<button data-correct="false" onclick="checkAnswer(this)">C) China</button>
+<button data-correct="false" onclick="checkAnswer(this)">D) Malaysia</button>
+</div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+<p>4. The main theme of Kyoto Protocol 1997 was</p>
+<div class="options">
+<button data-correct="true" onclick="checkAnswer(this)">A) Reducing greenhouse gas emissions</button>
+<button data-correct="false" onclick="checkAnswer(this)">B) Emphasis on disarmament</button>
+<button data-correct="false" onclick="checkAnswer(this)">C) Opposing terrorism</button>
+<button data-correct="false" onclick="checkAnswer(this)">D) Growth in International Trade</button>
+</div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+<p>5. The world's largest oil producing country is</p>
+<div class="options">
+<button data-correct="false" onclick="checkAnswer(this)">A) Egypt</button>
+<button data-correct="false" onclick="checkAnswer(this)">B) Iran</button>
+<button data-correct="true" onclick="checkAnswer(this)">C) Saudi Arabia</button>
+<button data-correct="false" onclick="checkAnswer(this)">D) Iraq</button>
+</div>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+<p>6. Which of the following is related to 'Tryst with Destiny'?</p>
+<div class="options">
+<button data-correct="false" onclick="checkAnswer(this)">A) Mahatma Gandhi</button>
+<button data-correct="false" onclick="checkAnswer(this)">B) Sardar Patel</button>
+<button data-correct="true" onclick="checkAnswer(this)">C) Jawaharlal Nehru</button>
+<button data-correct="false" onclick="checkAnswer(this)">D) Bhimrao Ambedkar</button>
+</div>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+<p>7. The political ideology in favour of progress through open competition and market-oriented economy is called</p>
+<div class="options">
+<button data-correct="false" onclick="checkAnswer(this)">A) Left</button>
+<button data-correct="true" onclick="checkAnswer(this)">B) Right</button>
+<button data-correct="false" onclick="checkAnswer(this)">C) Fundamentalism</button>
+<button data-correct="false" onclick="checkAnswer(this)">D) Secular</button>
+</div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+<p>8. When did the 'Bandung Conference' take place?</p>
+<div class="options">
+<button data-correct="false" onclick="checkAnswer(this)">A) 1951</button>
+<button data-correct="false" onclick="checkAnswer(this)">B) 1952</button>
+<button data-correct="false" onclick="checkAnswer(this)">C) 1954</button>
+<button data-correct="true" onclick="checkAnswer(this)">D) 1955</button>
+</div>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+<p>9. How many seats did Indira Gandhi's Congress (R) get in the 1971 Lok Sabha elections?</p>
+<div class="options">
+<button data-correct="true" onclick="checkAnswer(this)">A) 352</button>
+<button data-correct="false" onclick="checkAnswer(this)">B) 258</button>
+<button data-correct="false" onclick="checkAnswer(this)">C) 345</button>
+<button data-correct="false" onclick="checkAnswer(this)">D) 313</button>
+</div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+<p>10. Who gave the call for 'Total Revolution' in 1974?</p>
+<div class="options">
+<button data-correct="false" onclick="checkAnswer(this)">A) Morarji Desai</button>
+<button data-correct="true" onclick="checkAnswer(this)">B) Jayaprakash Narayan</button>
+<button data-correct="false" onclick="checkAnswer(this)">C) George Fernandes</button>
+<button data-correct="false" onclick="checkAnswer(this)">D) Charu Mazumdar</button>
+</div>
+</div>
+
+<!-- Q11 -->
+<div class="question">
+<p>11. Who became the Prime Minister of the National Front government in 1989?</p>
+<div class="options">
+<button data-correct="false" onclick="checkAnswer(this)">A) Chaudhary Charan Singh</button>
+<button data-correct="false" onclick="checkAnswer(this)">B) Morarji Desai</button>
+<button data-correct="true" onclick="checkAnswer(this)">C) V. P. Singh</button>
+<button data-correct="false" onclick="checkAnswer(this)">D) Chandrashekhar</button>
+</div>
+</div>
+
+</div>
+
+<script>
+function checkAnswer(selected) {
+    const buttons = selected.parentElement.querySelectorAll("button");
+    buttons.forEach(btn => {
+        btn.disabled = true;
+        if (btn.dataset.correct === "true") {
+            btn.classList.add("correct");
+        }
+    });
+    if (selected.dataset.correct === "false") {
+        selected.classList.add("wrong");
+    }
+}
+</script>
+
+</body>
+</html>
